@@ -1,33 +1,55 @@
 .container {
-    display: flex;
-    background: #00000091;
-    height: 450px;
-    display: flex;
-    flex-direction: row;
-    /* column, row, column-reverse, row-reverse */
+  display: flex;
+  background: #00000091;
+  height: 450px;
+  display: flex;
 
-    flex-wrap: wrap;
-    /* wrap, nowarap, wrap-reverse */
+  flex-direction: row;
+  /* column, row, column-reverse, row-reverse */
 
-    flex-flow: row wrap;
-    
-    justify-content: flex-start;
-    /* center, space-between, space-around, space-evenly, flex-end, flex-start */
+  flex-wrap: nowrap;
+  /* wrap, nowarap, wrap-reverse */
 
-    align-items: stretch;
-    /* stretch, center, flex-start, flex-end,baseline */
+  /* flex-flow: row wrap; */
 
-    align-content: stretch;
-    /* stretch, center, flex-start, flex-end, space-between, space-around, */
+  justify-content: flex-start;
+  /* center, space-between, space-around, space-evenly, flex-end, flex-start */
+
+  align-items: stretch;
+  /* stretch, center, flex-start, flex-end,baseline */
+
+  align-content: flex-start;
+  /* stretch, center, flex-start, flex-end, space-between, space-around, */
 }
 
 .item {
-    background: #0000ff;
-    padding: 15px; 
-    color: #fff;
-    margin: 5px;
-    width: 150px;
-    
+  background: #0000ff;
+  padding: 20px;
+  color: #fff;
+  margin: 5px;
+  height: 30px;
+  flex-grow: 1;
+  flex-basis: 300px;
+  flex-shrink: 1;
+
 }
 
+.article-01 {
+  order: 4;
+  
+}
 
+.article-02 {
+  order: 3;
+  flex-shrink: 2;
+}
+
+.article-03 {
+  order: 1;
+ 
+}
+
+.article-04 {
+  order: 2;
+ 
+}
