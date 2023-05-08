@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    opacity: 0.9;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover {
+    opacity: 1;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to bottom, #bb7505, #bec606);
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 40px;   
+}
+
+header img {
+    width: 200px;
+}
+
+header ul {
+    display: flex;
+    list-style-type: none;
+}
+
+header a {
+    color: #22220d;
+}
+
+header li{
+    margin: 0 12px;
+}
+
+header li:first-child {
+    margin-left: 0;
+} 
+
+header li:last-child {
+    margin-right: 0;
+}
+
+@media (max-width: 700px) {
+    header{
+        flex-direction: column;
+    } 
+
+    header img {
+        margin-bottom: 15px;
+    }
+
+    .atracao h1 {
+        font-size: 1rem;
+    }
+
+    .atracao h3 {
+        font-size: 0.5rem;
+    }
+
+    
+}
+
+.atracao { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background: url('/imagens/hero.jpg');
+    background-size: cover;
+    min-height: 100vh;
+    color: #fff;
+}
+
+.atracao h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.atracao h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+
+@media (max-width: 720px) {
+    .atracao h1 {
+        font-size: 2rem;
+    }
+
+    .atracao h3 {
+        font-size: 1.4rem;
+    }
+}
+
+.botao {
+    background: #fff;
+    color: #22220d; 
+    border-radius: 5px;
+    padding: 10px 40px;
+    text-transform: uppercase;
+}
