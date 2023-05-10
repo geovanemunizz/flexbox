@@ -97,14 +97,13 @@ header li:last-child {
 }
 
 .botao {
-    background: #fff;
-    color: #22220d;
-    border-radius: 5px;
-    padding: 10px 40px;
-    text-transform: uppercase;
-    margin-top: 20px;
-  }
-  
+  background: #fff;
+  color: #22220d;
+  border-radius: 5px;
+  padding: 10px 40px;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
 
 @media (max-width: 720px) {
   .sobre h1 {
@@ -116,7 +115,6 @@ header li:last-child {
   }
 }
 
-
 .atracao {
   display: flex;
   flex-direction: column;
@@ -127,6 +125,7 @@ header li:last-child {
 .atracao h3 {
   margin-bottom: 25px;
   font-size: 1rem;
+  text-align: center;
 }
 
 .atracao p {
@@ -155,12 +154,69 @@ header li:last-child {
   background-clip: content-box;
   background-size: cover;
   background-position: center center;
-  
+}
+.imagem-pequena {
+  flex-basis: 40%;
+}
+.imagem-grande {
+  flex-basis: 60%;
 }
 
-.pequena {
-    flex-basis: 40%;
+@media (max-width: 700px) {
+  .imagem-peqeuna,
+  .imagem-grande {
+    flex-basis: 100%;
+  }
 }
-.grande {
-    flex-basis: 60%;
+
+.caracteristica {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 50px;
+  background-color: #22220d;
+  color: #fff;
+}
+
+.caracteristica h3 {
+  margin-bottom: 35px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.caracteristica p {
+  max-width: 800px;
+  margin-bottom: 35px;
+  text-align: center;
+}
+
+.caracteristica hr {
+  width: 200px;
+  height: 2px;
+  background: #fff;
+  border: none;
+  margin-bottom: 70px;
+}
+
+.caracteristica .list {
+  display: flex;
+  width: 100%;
+ 
+}
+
+.caracteristica li {
+  padding: 0 30px;
+  text-align: center;
+  margin: auto;
+}
+
+.caracteristica .list li span {
+  color: #c3c63b;
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+.caracteristica .list li h4 {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
 }
