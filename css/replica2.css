@@ -1,0 +1,307 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+a {
+    text-decoration: none;
+    opacity: 0.9;
+    color: #111611;
+}
+
+a:hover {
+    opacity: 1;
+}
+
+hr {
+    width: 200px;
+    height: 2px;
+    background: #22220d;
+    border: none;
+    margin-bottom: 70px;
+  } 
+  
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background: linear-gradient(to right, #e51111, rgb(202, 160, 8), #bdbd11);
+    padding: 10px 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+header img {
+    width: 200px;
+}
+
+header ul {
+    display: flex; 
+}
+
+header li {
+    margin: 0 12px;
+}
+
+header a:hover {
+    color:#427808;
+    text-decoration: underline;
+  }
+
+header li:first-child {
+    margin-left: 0;
+}
+
+header li:last-child {
+    margin-right: 0;
+}
+
+@media (max-width: 700px) {
+    header{
+        flex-direction: column;
+    } 
+
+    header img {
+        margin-bottom: 15px;
+    }
+
+    .mural h1 {
+        font-size: 1rem;
+    }
+
+    .mural h2 {
+        font-size: 0.5rem;
+    }
+}
+
+.mural {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background: url('/imagens/hero.jpg') no-repeat;
+    background-size: cover;
+    color: #fff;
+    padding: 10px;
+}
+
+.mural h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.mural h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px 40px;
+    border-radius: 7px;
+    box-shadow: 1px 1px 2px #726713;
+    margin-top: 10px;
+}
+
+.conteudo {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    color: #111611;
+    padding: 100px 40px;
+}
+
+.conteudo h3 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.conteudo p {
+   margin-bottom: 20px;
+}
+
+.imagem {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.imagem li {
+    height: 350px;
+    padding: 40px;
+    background-size: cover;
+    background-position: center center;
+    background-clip: content-box;
+}
+
+.imagem-pequena {
+    flex-basis: 40%;
+}
+
+.imagem-grande{
+    flex-basis: 60%;
+}
+
+@media (max-width: 700px) {
+    .imagem-pequena {
+        flex-basis: 100%;
+    }
+    .imagem-grande {
+        flex-basis: 100%;
+    }
+}
+
+.hotel-paraiso {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    background: #22220d;
+    padding: 100px 50px;
+}
+
+.hotel-paraiso h3 {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.hotel-paraiso hr {
+    background-color: #fff;
+}
+
+.hotel-paraiso p {
+   max-width: 800px;
+   text-align: center;
+   margin-bottom: 30px;
+}
+
+.hotel-paraiso .config {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+}
+
+.hotel-paraiso li {
+   margin: auto;
+   text-align: center;
+   padding: 0 30px
+}
+
+.config span {
+    color: #bdbd11;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+.config h4 {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 700px) {
+    .hotel-paraiso .config {
+        flex-direction: column;
+    }
+}
+
+.contatos {
+    display: flex;
+    align-items: center;
+    padding: 100px 50px;
+    flex-direction: column;
+    color: #111611;
+}
+
+.contatos h3 {
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.contatos p {
+    max-width: 800px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contatos form {
+    display: flex;
+    width: 80%;
+    max-width: 800px;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.contatos form input {
+    border: 1px solid #111611;
+    padding: 15px;
+    margin-right: 15px;
+    flex: 1;
+    border-radius: 5px;
+}
+
+.contatos form button {
+   padding: 15px;
+   background: #22220d;
+   border-radius: 5px;
+   color: #fff;
+   border: 0;
+   cursor: pointer;
+}
+
+.contatos form button:hover {
+    color: #bdbd11;
+    background: #182d02;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #22220d;
+    padding: 50px 50px;
+}
+
+footer ul {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+footer li {
+    margin-right: 15px;
+}
+
+footer li:last-child {
+    margin-right: 0;
+}
+
+footer li span {
+    color: #bdbd11;
+    font-size: 1.2rem;
+}
+
+footer p {
+    color: #fff;
+    margin-top: 15px;
+    text-align: center;
+}
+

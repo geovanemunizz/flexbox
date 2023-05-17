@@ -20,6 +20,15 @@ a:hover {
   opacity: 1;
 }
 
+hr {
+  width: 200px;
+  height: 2px;
+  background: #22220d;
+  border: none;
+  margin-bottom: 70px;
+} 
+
+
 header {
   display: flex;
   justify-content: space-between;
@@ -134,13 +143,6 @@ header li:last-child {
   text-align: center;
 }
 
-.atracao hr {
-  width: 200px;
-  height: 2px;
-  background: #22220d;
-  border: none;
-  margin-bottom: 50px;
-}
 .list {
   display: flex;
   width: 100%;
@@ -171,8 +173,8 @@ header li:last-child {
 
 .caracteristica {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
   padding: 100px 50px;
   background-color: #22220d;
   color: #fff;
@@ -191,17 +193,13 @@ header li:last-child {
 }
 
 .caracteristica hr {
-  width: 200px;
-  height: 2px;
   background: #fff;
-  border: none;
-  margin-bottom: 70px;
 }
 
 .caracteristica .list {
   display: flex;
   width: 100%;
- 
+  flex-direction: row;
 }
 
 .caracteristica li {
@@ -219,6 +217,7 @@ header li:last-child {
 .caracteristica .list li h4 {
   font-size: 1.5rem;
   margin-bottom: 30px;
+  text-align: center;
 }
 
 /* contato */
@@ -243,15 +242,6 @@ header li:last-child {
   margin-bottom: 35px;
   text-align: center;
 }
-
-.contatos hr {
-  width: 200px;
-  height: 2px;
-  background: #fff;
-  border: none;
-  margin-bottom: 70px;
-}
-
 .contatos form {
   display: flex;
   width: 80%;
@@ -278,8 +268,44 @@ header li:last-child {
   cursor: pointer;
 }
 
+.contatos form button:hover {
+  background: #1b3a17;
+  color: #c3c63b;
+}
+
+
 @media (max-width: 700px) {
   .contatos form button {
     margin-top: 20px;
   }
 }
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #22220d;
+  padding: 50px 50px;
+}
+
+footer ul {
+  display: flex;
+  margin-bottom: 20px;
+ }
+
+ footer li {
+  margin-right: 10px;
+ }
+
+ footer li:last-child {
+  margin-right: 0;
+ }
+
+ footer p {
+  color: #fff;
+  text-align: center;
+ }
+
+ footer span {
+  color: #bec606;
+  font-size: 1.5rem;
+ }
