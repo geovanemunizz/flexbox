@@ -1,0 +1,116 @@
+main {
+  display: flex;
+  background: rgb(221, 215, 178);
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  max-width: 800px;
+  color: yellow;
+  overflow: scroll;
+}
+
+div {
+  cursor: pointer;
+}
+
+li {
+  list-style-type: none;
+}
+
+main div {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 10px;
+  width: 200px;
+  margin: 0 0 10px;
+  border: 2px solid rgb(81, 152, 240);
+}
+
+.bloco-1 {
+  background: blue;
+}
+
+.bloco-2 {
+  background: red;
+}
+
+.bloco-3 {
+  background: green;
+}
+
+/* exe 2*/
+
+.linha {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  max-width: 800px;
+  background-color: rgb(49, 68, 84);
+  color: white;
+}
+
+.linha-4 {
+  text-align: center;
+  padding: 10px;
+  width: 200px;
+  margin-bottom: 10px;
+  border: 2px solid rgb(81, 152, 240);
+}
+/* exe 4*/
+.espace {
+  display: flex;
+  flex-direction: row;
+  max-width: 800px;
+  height: 100px;
+  padding: 20px;
+  background: red;
+  margin-top: 10px;
+  color: white;
+}
+
+.espace div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid rgb(204, 255, 0);
+  background: blue;
+  width: 200px;
+  margin: 10px;
+}
+
+/* ordem */
+
+.ordem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  background: rgb(221, 215, 178);
+  max-width: 100%;
+  color: blue;
+}
+
+.ordem div {
+  display: flex;
+  width: 200px;
+  height: 80px;
+  background: yellow;
+  border: 2px solid rgb(144, 12, 144);
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+.ordem div:nth-child(3) {
+  order: -1;
+}
+
+.ordem div:nth-child(1) {
+  order: 1;
+}
